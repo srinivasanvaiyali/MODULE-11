@@ -3,10 +3,8 @@
 ## Date:
 ## Aim:
 To write a C++ program to generate the Minimum Spanning Tree (MST) of a weighted, undirected, and connected graph using Prim’s Algorithm, and to find the sum of weights of the MST.
-<img width="347" height="319" alt="481638250-c87f1b28-f4b7-4464-8d37-6d28652314e0" src="https://github.com/user-attachments/assets/cbf02325-c015-45de-8297-0582fc6da3ca" />
 
 ## Algorithm:
-```
 1. Start the program.
 2. Input the number of vertices V and edges E.
 3. Store the graph as an adjacency list with edge weights.
