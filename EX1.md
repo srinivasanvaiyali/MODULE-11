@@ -38,5 +38,3 @@ void Graph::addEdge(int u, int v, int w)
 
 ## Result:
 The program calculates the sum of weights of the MST for a connected, weighted, undirected graph.
-MST cost = 4
-```
