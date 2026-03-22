@@ -21,87 +21,22 @@ To write a C++ program to generate the Minimum Spanning Tree (MST) of a weighted
 
 ## Program:
 ```
-/*
-#include<bits/stdc++.h>
-using namespace std;
-# define INF 0x3f3f3f3f
-
-// iPair ==> Integer Pair
-typedef pair<int, int> iPair;
-
-// This class represents a directed graph using
-// adjacency list representation
-class Graph
-{
-	int V; // No. of vertices
-
-	// In a weighted graph, we need to store vertex
-	// and weight pair for every edge
-	list< pair<int, int> > *adj;
-
-public:
-	Graph(int V); // Constructor
-
-	// function to add an edge to graph
-	void addEdge(int u, int v, int w);
-
-	// Print MST using Prim's algorithm
-	void primMST();
-};
-
-// Allocates memory for adjacency list
-Graph::Graph(int V)
-{
-	this->V = V;
-	adj = new list<iPair> [V];
-} 
 void Graph::addEdge(int u, int v, int w)
 {
-	adj[u].push_back(make_pair(v, w));
-	adj[v].push_back(make_pair(u, w));
-}
-
-*/
-
-int main()
-{
-	// create the graph given in above figure
-	int V;
-	int edges,vertices,u,v,w;
-	//cout<<"Enter number of vertices and edges: ";
-    cin>>vertices>>edges;
-    V=vertices;
-	Graph g(V);
-    for(int i=0;i<edges;i++){
-        cin>>u>>v>>w;
-        g.addEdge(u,v,w);
-    }
-    cout<<"Prim's MST edges are:";
-    g.primMST();
-    // Write your code here
+    adj[u].push_back(make_pair(v,w));
+    adj[v].push_back(make_pair(u,w));
     
-  
-	return 0;
 }
 ```
 
 
 ## Output:
-<img width="861" height="867" alt="481638470-d1387327-9998-471e-a36c-d06bdcb1e6c3" src="https://github.com/user-attachments/assets/67492863-7713-4830-9248-42d85a227af2" />
+<img width="832" height="556" alt="519165660-6f07f811-8f56-4df6-a362-76c1e2749b64" src="https://github.com/user-attachments/assets/eb66b907-6edf-4d7f-bc56-5d9053286ff8" />
+
 
 
 
 ## Result:
-```
-Input:
-3 3
-0 1 5
-0 2 1
-1 2 3
-
-Output:
-Prim's MST edges are:
-2 - 1
-0 - 2
+The program calculates the sum of weights of the MST for a connected, weighted, undirected graph.
 MST cost = 4
 ```
